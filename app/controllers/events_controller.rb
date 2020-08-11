@@ -1,5 +1,4 @@
 class EventsController < ApplicationController
-  include SessionsHelper
   before_action :logged_in?, only: [:create]
 
   def index

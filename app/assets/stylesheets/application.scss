@@ -9,8 +9,9 @@ body {
 
 .navbar,
 .main-footer {
-  background: #0f2027;
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+background: #e52d27;
+background: linear-gradient(to right, #b31217, #e52d27);
+
 }
 
 .text-font {
@@ -18,8 +19,13 @@ body {
 }
 
 .card-bg {
-  background: #00416a;
-  background: linear-gradient(to right, #e4e5e6, #00416a);
+  background: #e52d27;
+background: linear-gradient(to right, #b31217, #e52d27);
+color: white;
+}
+
+.form-cate{
+  height: 200px;
 }
 
 .shdw {

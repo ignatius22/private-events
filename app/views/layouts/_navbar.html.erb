@@ -8,9 +8,20 @@
     <ul class="navbar-nav ml-auto">
       
       <li class="nav-item active">
-        <%= link_to "Create Event", class: "nav-link text-white" %>
+        <%= link_to "Create Event", new_event_path, class: "nav-link text-white" %>
       </li>
-    
+    </ul>
+
+     <ul class="navbar-nav ml-4">
+       <li class="nav-item active">
+        <%= link_to "Sign Up", new_user_path, class: "nav-link text-white " %>
+      </li>
+    </ul>
+
+      <ul class="navbar-nav ml-4">
+       <li class="nav-item active">
+        <%= link_to "Sign In", login_path, class: "nav-link text-white " %>
+      </li>
     </ul>
   </div>
 </nav>

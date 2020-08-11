@@ -1,13 +1,12 @@
  class SessionsController < ApplicationController
   
-  def new; end
 
   def create
     if params[:session][:username].blank?
       render 'new'
-      flash.notice = 'Please enter your name'
+      flash.alert = 'Please enter your name'
     else
-      user = User.find_by_name(params[:session][:username])
+      user = User.find_by_username(params[:session][:username])
       if user.present?
         session[:user_id] = user.id
         redirect_to root_url, notice: 'Logged in!'
