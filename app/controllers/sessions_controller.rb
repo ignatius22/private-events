@@ -1,6 +1,4 @@
- class SessionsController < ApplicationController
-  
-
+class SessionsController < ApplicationController
   def create
     if params[:session][:username].blank?
       render 'new'
