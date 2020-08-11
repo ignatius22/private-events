@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in?, only: [:create, :show, :new]
+  # before_action :logged_in?, only: [:create, :show, :new]
 
   def new
     @user = User.new
@@ -15,9 +15,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash.notice = "Account created succesfully welcome #{@user.username}"
-      log_in @user
-      redirect_to root_path
+      flash.notice = "Account created succesfully welcome #{@user.username}.Please sign in."
+      redirect_to login_path
     else
       flash.now[:notice] = 'Please enter your name'
       render :new
