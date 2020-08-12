@@ -10,28 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_200_811_072_850) do
-  create_table 'event_attendees', force: :cascade do |t|
-    t.integer 'attendee_id'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.integer 'event_id'
+ActiveRecord::Schema.define(version: 2020_08_11_072850) do
+
+  create_table "event_attendees", force: :cascade do |t|
+    t.integer "attendee_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "event_id"
   end
 
-  create_table 'events', force: :cascade do |t|
-    t.text 'description'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.datetime 'date'
-    t.integer 'creator_id'
-    t.string 'title'
-    t.string 'location'
-    t.index ['creator_id'], name: 'index_events_on_creator_id'
+  create_table "events", force: :cascade do |t|
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.datetime "date"
+    t.integer "creator_id"
+    t.string "title"
+    t.string "location"
+    t.index ["creator_id"], name: "index_events_on_creator_id"
   end
 
-  create_table 'users', force: :cascade do |t|
-    t.string 'username'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
+
 end
