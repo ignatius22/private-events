@@ -31,6 +31,7 @@ gem 'bcrypt', '~> 3.1.7'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'rubocop', '~>0.81.0'
@@ -50,6 +51,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+   gem 'rspec-rails', '~> 4.0.1'
 end
 
 group :test do
@@ -58,6 +60,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'rspec-rails', '~> 4.0.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

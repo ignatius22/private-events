@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  # before_action :logged_in?, only: [:create, :show, :new]
+
 
   def new
     @user = User.new
@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @created_events = @user.created_events
+    @attended_events = @user.attended_events
     @upcoming_events = current_user.attended_events.upcoming_events
     @previous_events = current_user.attended_events.previous_events
   end

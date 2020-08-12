@@ -8,7 +8,6 @@ class EventsController < ApplicationController
   end
 
   def show
-    # @event = current_user.created_events.find(params[:id])
     @event = Event.find(params[:id])
     @attendees = User.all
   end
