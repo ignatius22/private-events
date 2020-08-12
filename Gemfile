@@ -31,7 +31,6 @@ gem 'bcrypt', '~> 3.1.7'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'rubocop', '~>0.81.0'
@@ -61,8 +60,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'rspec-rails', '~> 4.0.1'
   gem 'launchy'
+  gem 'rspec-rails', '~> 4.0.1'
   gem 'shoulda-matchers', '~> 3.1'
 end
 
