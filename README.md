@@ -13,6 +13,9 @@ This project is about building an Event platform where only Users who are signed
 In order to make the program work, you need to have ruby interpreter installed in your system. You can get the latest version of ruby from [official website](https://www.ruby-lang.org/en/downloads/).
 
 
+![Screenshot](app_screenshot.png)
+
+
 ## Getting Started 
 
 1. clone the project
